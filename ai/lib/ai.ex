@@ -32,7 +32,7 @@ defmodule AI do
 	end
 
 	defp start_list do
-		Agent.start(fn() -> [] end, [name: -> __MODULE__])
+		Agent.start(fn() -> [] end, [name: __MODULE__])
 	end
 
 	defp build_list(question) do
