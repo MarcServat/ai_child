@@ -1,5 +1,7 @@
 defmodule AI do
 	
+	use Application
+
 	defp addition_question(first_number, second_number) do
 		"Is the result of #{first_number} + #{second_number} even?"
 	end
