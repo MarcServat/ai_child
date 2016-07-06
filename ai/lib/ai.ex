@@ -59,7 +59,7 @@ defmodule AI do
 		IO.puts(answer_to(question))
 	end
 
-	def start do
+	def start(_,_) do
 		start_list
 		generate(20)
 		Enum.each(questions, &display_answer_for(&1))		
