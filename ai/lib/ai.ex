@@ -49,7 +49,7 @@ defmodule AI do
 		|> Enum.map(&String.to_integer(&1))
 		|>Enum.reduce(0, fn(n, acc) -> n + acc end)
 		|>even?
-		|say_answer
+		|>say_answer
 	end
 
 	defp display_answer_for(question) do
